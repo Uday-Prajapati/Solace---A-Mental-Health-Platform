@@ -1,0 +1,541 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-page setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #ffffff;
+  color: #333333;
+  overflow-y: auto;
+}
+
+/* Home Container */
+.home-container {
+  width: 100%;
+  height: 100%;
+  background: url('../Images/HomeBG.png') center/cover no-repeat fixed;
+  padding-top: 80px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: fadeInDown 1s ease;
+  color: black;
+  text-shadow: none;
+}
+
+.hero-subtitle {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease 0.5s both;
+  color: black;
+  text-shadow: none;
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease 1s both;
+  color: black;
+  text-shadow: none;
+  font-weight: 900;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 20px;
+  background: transparent;
+  height: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #000000 !important;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.service-title {
+  color: #000000 !important;
+  font-weight: 900;
+}
+
+.service-description {
+  color: #000000 !important;
+  font-weight: 900;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.cta-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+}
+
+/* Text Section */
+.text-content {
+  flex: 1;
+  text-align: left;
+  color: #333333;
+  padding: 40px;
+  background: #ffffff; /* White background */
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+  border: 1px solid #eeeeee; /* Light border for definition */
+}
+
+h1 {
+  font-size: 60px;
+  color: #2c3e50; /* Dark blue-gray instead of orange */
+  margin: 20px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+p {
+  font-size: 24px;
+  color: #555555;
+  margin-top: 10px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+/* Floating Brain Image */
+.floating-brain {
+  width: 500px;
+  height: 350px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Mental Health Quotes */
+.quote-container {
+  margin-top: 20px;
+  min-height: 30px;
+}
+
+.quote-text {
+  font-size: 22px;
+  font-style: italic;
+  color: #666666;
+}
+
+/* About Section */
+.about-section {
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-content h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.masonry-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer-section {
+  position: relative;
+  padding: 40px 20px;
+  background: #ffffff;
+  text-align: center;
+  border-top: 1px solid #eeeeee;
+}
+
+/* Social Media Section */
+.social-media-section {
+  position: relative;
+  padding: 40px 20px;
+  background: #ffffff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #2c3e50;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff8c00;
+  transform: scale(1.2);
+}
+
+/* Contact Us Section */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: transparent;
+  border-radius: 0;
+  margin: 0;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.contact-title {
+  color: #000000 !important;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-description {
+  color: #000000 !important;
+  font-weight: 900;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid black;
+  background: transparent;
+  font-weight: 900;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: black;
+  color: white;
+}
+
+.social-icon.facebook {
+  background-color: #1877f2;
+}
+
+.social-icon.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icon.whatsapp {
+  background-color: #25d366;
+}
+
+.social-icon.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Section Headings */
+.about-section h2,
+.services-section h2,
+.contact-section h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure sections have proper spacing */
+.about-section,
+.services-section,
+.contact-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+/* Quote Section */
+.quote-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  margin: 40px 0;
+}

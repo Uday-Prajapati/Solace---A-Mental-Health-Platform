@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  
+  <!-- Brain elements -->
+  <path d="M1200 200 C1300 150 1400 300 1300 400" stroke="#FFB6A3" stroke-width="3" fill="#FFB6A3" opacity="0.6"/>
+  <path d="M1400 300 C1450 250 1500 300 1450 350" stroke="#FFB6A3" stroke-width="3" fill="#FFB6A3" opacity="0.6"/>
+  
+  <!-- Rain clouds -->
+  <path d="M200 100 C150 100 100 150 150 200" stroke="#A8D8E2" stroke-width="3" fill="#A8D8E2" opacity="0.4"/>
+  <path d="M180 220 L190 240 M200 220 L210 240 M220 220 L230 240" stroke="#A8D8E2" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Broken heart -->
+  <path d="M100 300 Q150 250 200 300 L150 350 L100 300" stroke="#FF7F7F" stroke-width="3" fill="#FF7F7F" opacity="0.6"/>
+  
+  <!-- Speech bubbles -->
+  <path d="M800 100 Q850 100 850 150 L800 200 L750 150 Q750 100 800 100" stroke="#FFD700" stroke-width="3" fill="#FFD700" opacity="0.4"/>
+  <text x="770" y="140" font-family="Arial" font-size="24" fill="#000000">Hey!</text>
+  
+  <!-- Sad emotion -->
+  <path d="M200 800 Q250 750 300 800" stroke="#A8D8E2" stroke-width="3" fill="none" opacity="0.4"/>
+  <text x="220" y="850" font-family="Arial" font-size="24" fill="#A8D8E2">Sad</text>
+  
+  <!-- Bored emotion -->
+  <path d="M400 200 Q450 150 500 200" stroke="#FFB6A3" stroke-width="3" fill="none" opacity="0.4"/>
+  <text x="420" y="250" font-family="Arial" font-size="24" fill="#FFB6A3">Bore</text>
+  
+  <!-- Sunshine -->
+  <path d="M1400 800 L1450 800" stroke="#FFD700" stroke-width="3" opacity="0.4"/>
+  <text x="1380" y="850" font-family="Arial" font-size="24" fill="#FFD700">Sunshine</text>
+  
+  <!-- Medicine bottle -->
+  <rect x="1300" y="400" width="60" height="100" rx="10" fill="#FFD700" opacity="0.6"/>
+  <rect x="1310" y="380" width="40" height="20" rx="5" fill="#FFD700" opacity="0.6"/>
+  <path d="M1320 450 L1340 450" stroke="white" stroke-width="2"/>
+  
+  <!-- Decorative flowers -->
+  <path d="M1500 600 C1520 580 1540 580 1560 600" stroke="#FFB6A3" stroke-width="2" fill="none"/>
+  <circle cx="1530" cy="590" r="5" fill="#FFD700"/>
+  
+  <!-- Connecting lines -->
+  <path d="M100 100 C200 200 300 100 400 200" stroke="#000000" stroke-width="1" opacity="0.2"/>
+  <path d="M800 400 C900 500 1000 400 1100 500" stroke="#000000" stroke-width="1" opacity="0.2"/>
+</svg> 

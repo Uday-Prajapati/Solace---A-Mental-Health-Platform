@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a6e3ea; /* Light blue background */
+  }
+  
+  .mindmed-container {
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #5f6060;
+  }
+  
+  .login-btn {
+    background-color: transparent;
+    border: 1px solid #5f6060;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #e6f7f8;
+    border-radius: 20px;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #333;
+  }
+  

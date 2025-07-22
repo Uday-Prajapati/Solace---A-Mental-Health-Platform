@@ -1,0 +1,220 @@
+/* Navbar.css */
+:root {
+  --primary: #2c3e50;
+  --secondary: #34495e;
+  --accent: #3498db;
+  --light: #ecf0f1;
+  --dark: #1a1a1a;
+  --navbar-color: #e0f4f8;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ============ Base Styles ============ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  padding: 0 2rem;
+  background: var(--navbar-color) !important;
+  background-color: var(--navbar-color) !important;
+  box-shadow: none !important;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar::before,
+.navbar::after {
+  display: none !important;
+}
+
+.navbar.scrolled {
+  background: var(--navbar-color) !important;
+  background-color: var(--navbar-color) !important;
+  box-shadow: none !important;
+}
+
+/* ============ Logo Section ============ */
+.nav-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.logo-image {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  max-width: 180px;
+}
+
+/* ============ Menu Container ============ */
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 20px;
+}
+
+.menu-line {
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.menu-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.menu-container:hover {
+  opacity: 0.8;
+}
+
+/* ============ Desktop Navigation ============ */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  height: 100%;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.login-button {
+  padding: 0.5rem 1.5rem;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #5a6fd1;
+}
+
+/* ============ Menu Toggle ============ */
+.menu-toggle {
+  height: 100%;
+  background: none;
+  border: none;
+  padding: 0 2rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.menu-toggle:hover {
+  opacity: 0.8;
+}
+
+/* ============ Dropdown Menu ============ */
+.mobile-menu {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  width: 250px;
+  background-color: var(--navbar-color);
+  border-radius: 0 0 0 8px;
+  box-shadow: none;
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  padding: 0.75rem;
+  z-index: 999;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ============ Content Adjustment ============ */
+main {
+  padding-top: 64px;
+}
+
+/* ============ Responsive Styles ============ */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.5rem;
+    height: 56px;
+  }
+  
+  .nav-logo {
+    margin-left: 1rem;
+  }
+  
+  .menu-toggle {
+    padding: 0 1rem;
+  }
+  
+  .mobile-menu {
+    top: 56px;
+  }
+  
+  main {
+    padding-top: 56px;
+  }
+}

@@ -1,0 +1,215 @@
+/* Base styles for the Stress component */
+.stress-container {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://img.freepik.com/free-vector/student-stress-concept-illustration_114360-9550.jpg?uid=R99341656&ga=GA1.1.1773352185.1739613341&semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.stress-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.stress-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50; /* Dark color for headings */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form styles */
+.stress-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between questions */
+}
+
+/* Question styles */
+.question {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85); /* Slightly transparent white background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+  backdrop-filter: blur(5px); /* Blur effect for a frosted glass look */
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Subtle border for depth */
+}
+
+.question:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Label styles */
+label {
+  font-size: 1.2rem;
+  color: #2c3e50; /* Consistent color for labels */
+  margin-bottom: 0.5rem;
+  font-weight: 500; /* Slightly bold */
+}
+
+/* Select box styles */
+select {
+  padding: 12px;
+  font-size: 1rem;
+  color: #34495e;
+  border: 2px solid #3498db; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition on focus */
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent white background */
+  appearance: none; /* Remove default arrow */
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #2980b9; /* Darker border on focus */
+  outline: none; /* Remove default outline */
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Glow effect on focus */
+}
+
+/* Custom dropdown arrow */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #3498db;
+  font-size: 0.8rem;
+}
+
+/* Submit button styles */
+button {
+  padding: 15px 25px; /* Sufficient padding */
+  font-size: 1.2rem;
+  color: #000000; /* White text */
+  background: linear-gradient(145deg, #3498db, #2980b9); /* Gradient background */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  display: block; /* Center button alignment */
+  margin: 20px auto; /* Center the button */
+}
+
+button:hover {
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+/* Result section styles */
+.result {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85); /* Slightly transparent light grey background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  backdrop-filter: blur(5px); /* Blur effect for a frosted glass look */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for depth */
+}
+
+.result h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.result p {
+  color: #34495e;
+  font-size: 1.2rem;
+}
+
+/* Floating emoji animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: float 2s ease-in-out infinite; /* Floating effect */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  p {
+    font-size: 1rem; /* Smaller paragraph text on mobile */
+  }
+
+  button {
+    width: 100%; /* Full-width button on small screens */
+  }
+
+  .question {
+    padding: 15px; /* Smaller padding on mobile */
+  }
+
+  select {
+    padding: 10px; /* Smaller padding on mobile */
+  }
+}
