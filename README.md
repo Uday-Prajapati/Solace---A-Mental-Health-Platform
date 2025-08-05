@@ -17,14 +17,20 @@ To provide accessible, evidence-based mental health support through technology, 
 
 ### 🏠 **Home & Navigation**
 - **Welcoming Homepage**: Beautiful, calming interface designed to reduce anxiety
-- **Responsive Navigation**: Easy-to-use navigation with smooth transitions
+- <img width="1895" height="857" alt="image" src="https://github.com/user-attachments/assets/0e19dae3-2b33-4c31-b42c-1f8819d95507" />
 - **User Authentication**: Secure login and registration system
+- <img width="1886" height="865" alt="image" src="https://github.com/user-attachments/assets/65448d07-0d6f-4b4e-99d7-00c282e2be7e" />
+- <img width="1892" height="833" alt="image" src="https://github.com/user-attachments/assets/f0eb04cc-b92f-446d-8aa4-4f24087e9df0" />
 - **Password Recovery**: Forgot password and reset functionality
+<img width="1890" height="822" alt="image" src="https://github.com/user-attachments/assets/c52080dc-6012-4eb1-8cf8-030260e17b38" />
 
 ### 🧠 **Mental Health Assessment Tools**
+<img width="1892" height="868" alt="image" src="https://github.com/user-attachments/assets/6e525ec0-e45a-4087-84df-c12285f78e6b" />
 - **Interactive Tests**: Comprehensive mental health assessments
-- **Condition-Specific Pages**: Dedicated sections for different mental health conditions
-- **Progress Tracking**: Monitor your mental health journey over time
+- <img width="1893" height="865" alt="image" src="https://github.com/user-attachments/assets/08406249-335b-4697-b9a0-99930bbbf6d7" />
+- <img width="1896" height="868" alt="image" src="https://github.com/user-attachments/assets/3991975d-138e-44c2-8834-e3cb2e1efc87" />
+- <img width="1892" height="862" alt="image" src="https://github.com/user-attachments/assets/dc5d6fe8-ffba-447b-b7cf-123922603d89" />
+<img width="1892" height="861" alt="image" src="https://github.com/user-attachments/assets/455a19ee-05f0-473e-bf36-df4334daf501" />
 
 ### 🎵 **Music Therapy**
 - **Curated Playlists**: Therapeutic music selections for different moods
