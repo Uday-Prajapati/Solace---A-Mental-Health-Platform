@@ -18,9 +18,11 @@ To provide accessible, evidence-based mental health support through technology, 
 ### 🏠 **Home & Navigation**
 - **Welcoming Homepage**: Beautiful, calming interface designed to reduce anxiety
 <img width="1895" height="857" alt="image" src="https://github.com/user-attachments/assets/0e19dae3-2b33-4c31-b42c-1f8819d95507" />
+
 - **User Authentication**: Secure login and registration system
 <img width="1886" height="865" alt="image" src="https://github.com/user-attachments/assets/65448d07-0d6f-4b4e-99d7-00c282e2be7e" />
 <img width="1892" height="833" alt="image" src="https://github.com/user-attachments/assets/f0eb04cc-b92f-446d-8aa4-4f24087e9df0" />
+
 - **Password Recovery**: Forgot password and reset functionality
 <img width="1890" height="822" alt="image" src="https://github.com/user-attachments/assets/c52080dc-6012-4eb1-8cf8-030260e17b38" />
 
