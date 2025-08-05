@@ -17,44 +17,52 @@ To provide accessible, evidence-based mental health support through technology, 
 
 ### 🏠 **Home & Navigation**
 - **Welcoming Homepage**: Beautiful, calming interface designed to reduce anxiety
-- <img width="1895" height="857" alt="image" src="https://github.com/user-attachments/assets/0e19dae3-2b33-4c31-b42c-1f8819d95507" />
+<img width="1895" height="857" alt="image" src="https://github.com/user-attachments/assets/0e19dae3-2b33-4c31-b42c-1f8819d95507" />
 - **User Authentication**: Secure login and registration system
-- <img width="1886" height="865" alt="image" src="https://github.com/user-attachments/assets/65448d07-0d6f-4b4e-99d7-00c282e2be7e" />
-- <img width="1892" height="833" alt="image" src="https://github.com/user-attachments/assets/f0eb04cc-b92f-446d-8aa4-4f24087e9df0" />
+<img width="1886" height="865" alt="image" src="https://github.com/user-attachments/assets/65448d07-0d6f-4b4e-99d7-00c282e2be7e" />
+<img width="1892" height="833" alt="image" src="https://github.com/user-attachments/assets/f0eb04cc-b92f-446d-8aa4-4f24087e9df0" />
 - **Password Recovery**: Forgot password and reset functionality
 <img width="1890" height="822" alt="image" src="https://github.com/user-attachments/assets/c52080dc-6012-4eb1-8cf8-030260e17b38" />
 
 ### 🧠 **Mental Health Assessment Tools**
 <img width="1892" height="868" alt="image" src="https://github.com/user-attachments/assets/6e525ec0-e45a-4087-84df-c12285f78e6b" />
 - **Interactive Tests**: Comprehensive mental health assessments
-- <img width="1893" height="865" alt="image" src="https://github.com/user-attachments/assets/08406249-335b-4697-b9a0-99930bbbf6d7" />
-- <img width="1896" height="868" alt="image" src="https://github.com/user-attachments/assets/3991975d-138e-44c2-8834-e3cb2e1efc87" />
-- <img width="1892" height="862" alt="image" src="https://github.com/user-attachments/assets/dc5d6fe8-ffba-447b-b7cf-123922603d89" />
+<img width="1893" height="865" alt="image" src="https://github.com/user-attachments/assets/08406249-335b-4697-b9a0-99930bbbf6d7" />
+<img width="1896" height="868" alt="image" src="https://github.com/user-attachments/assets/3991975d-138e-44c2-8834-e3cb2e1efc87" />
+<img width="1892" height="862" alt="image" src="https://github.com/user-attachments/assets/dc5d6fe8-ffba-447b-b7cf-123922603d89" />
 <img width="1892" height="861" alt="image" src="https://github.com/user-attachments/assets/455a19ee-05f0-473e-bf36-df4334daf501" />
 
 ### 🎵 **Music Therapy**
+<img width="1891" height="867" alt="image" src="https://github.com/user-attachments/assets/d3d114de-3ae4-480a-bb89-54d934f74149" />
+
 - **Curated Playlists**: Therapeutic music selections for different moods
 - **Audio Player**: High-quality audio playback with controls
-- **Spotify Integration**: Access to extensive music library
-- **Lyrics Display**: Song lyrics for enhanced therapeutic experience
+- **jamendo music Integration**: Access to extensive music library
 - **Custom Playlists**: Create and save personal therapeutic playlists
 
 ### 📚 **Bibliotherapy (Book Therapy)**
+<img width="1901" height="711" alt="image" src="https://github.com/user-attachments/assets/683c0dc8-3395-43fb-ab90-8a25e5b19a27" />
+
 - **Curated Book Collection**: Carefully selected books for mental health support
 - **Reading Recommendations**: Personalized book suggestions
 - **Digital Library**: Access to mental health literature
 - **Reading Progress**: Track your reading journey
 
 ### 🎬 **Video Therapy**
+<img width="1895" height="847" alt="image" src="https://github.com/user-attachments/assets/cd5caba3-40a5-4321-8f8c-d1892451342e" />
+<img width="1897" height="871" alt="image" src="https://github.com/user-attachments/assets/8fdb985f-a622-4de2-bc88-a6b0fe273c47" />
 - **Therapeutic Videos**: Guided meditation, relaxation, and educational content
 - **YouTube Integration**: Access to mental health channels and content
 - **Video Categories**: Organized by condition and therapy type
 - **Playlist Management**: Save and organize therapeutic videos
 
-### 🆘 **Crisis Support**
-- **Help Section**: Emergency resources and crisis hotlines
-- **Share Feature**: Connect with support networks
-- **Safety Tools**: Resources for immediate mental health support
+### 🆘 **Anonymous Chat**
+<img width="1888" height="825" alt="image" src="https://github.com/user-attachments/assets/3695d734-ae50-47ec-bf5a-41bee9317551" />
+<img width="1883" height="858" alt="image" src="https://github.com/user-attachments/assets/2a07d27c-da75-4f9a-b43c-2d78c21145ec" />
+
+- **Connect Anonymously:** Chat with real people who have overcome mental health struggles, without revealing your identity.
+- **Peer-to-Peer Support:** Share your thoughts and feelings freely, and receive guidance from those with lived experiences.
+- **Safe & Confidential Space:** Conversations are private, respectful, and designed to offer emotional comfort in a judgment-free environment.
 
 ### 🎨 **Interactive Features**
 - **Smooth Animations**: Framer Motion and GSAP animations for better UX
