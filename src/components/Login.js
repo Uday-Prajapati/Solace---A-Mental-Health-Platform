@@ -9,7 +9,7 @@ import fallbackImage from '../assets/fallback.png';
 
 // Set base URL for all axios requests
 const api = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',

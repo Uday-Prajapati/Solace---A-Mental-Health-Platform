@@ -62,7 +62,7 @@ const ForgotPassword = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/forgot-password',
+        `${process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000'}/api/forgot-password`,
         { email },
         {
           timeout: 8000,
