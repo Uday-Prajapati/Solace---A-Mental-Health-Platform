@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/Login.css';
 import LoginBackground from '../Images/LoginBackground.png';
@@ -17,11 +17,7 @@ const api = axios.create({
   timeout: 10000
 });
 
-// Add error handling to image elements
-const handleImageError = (e) => {
-  e.target.src = fallbackImage;
-  console.log('Image failed to load, using fallback');
-};
+
 
 const Login = () => {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -33,7 +29,6 @@ const Login = () => {
   });
   const [message, setMessage] = useState({ text: '', type: '', show: false });
   const [isLoading, setIsLoading] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [imageError, setImageError] = useState({
     illust: false,

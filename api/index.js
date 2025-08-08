@@ -168,19 +168,21 @@ module.exports = async (req, res) => {
       await user.save();
 
       // Create reset URL (update this with your Vercel domain)
-      const resetUrl = `${req.headers.origin}/reset-password/${resetToken}`;
+      const resetUrl = `${req.headers.origin || process.env.FRONTEND_URL || 'https://your-domain.vercel.app'}/reset-password/${resetToken}`;
 
       // Send email
       const mailOptions = {
         from: process.env.EMAIL_USER,
         to: email,
-        subject: 'Password Reset Request',
+        subject: 'Password Reset Request - Solace',
         html: `
           <h2>Password Reset Request</h2>
-          <p>You requested a password reset. Click the link below to reset your password:</p>
+          <p>You requested a password reset for your Solace account. Click the link below to reset your password:</p>
           <a href="${resetUrl}">${resetUrl}</a>
           <p>This link will expire in 1 hour.</p>
           <p>If you didn't request this, please ignore this email.</p>
+          <br>
+          <p>Best regards,<br>The Solace Team</p>
         `
       };
 

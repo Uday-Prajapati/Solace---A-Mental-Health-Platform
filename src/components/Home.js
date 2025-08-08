@@ -1,11 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 import { FaBrain, FaHeartbeat, FaHandHoldingHeart } from 'react-icons/fa';
 import { FaFacebook, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 function Home() {
-    const navigate = useNavigate();
 
     return (
         <div className="home-container">

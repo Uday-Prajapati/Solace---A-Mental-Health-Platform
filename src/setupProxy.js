@@ -7,7 +7,7 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'https://api.jamendo.com',
       changeOrigin: true,
-      secure: false,
+      secure: true,
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'https://mp3d.jamendo.com',
       changeOrigin: true,
-      secure: false,
+      secure: true,
       pathRewrite: {
         '^/audio': ''
       },

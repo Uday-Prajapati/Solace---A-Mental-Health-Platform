@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ServiceBG from '../Images/ServiceBG.avif';
 import '../styles/Services.css'; // Ensure this CSS file is created for your styles
 
 // Importing images
